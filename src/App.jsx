@@ -1,10 +1,14 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  function Greeting() {
+    return (
+      <h1>&quot;I swear by my pretty floral bonnet, I will end you.&quot;</h1>
+    );
+  }
 
   return (
     <>
@@ -15,6 +19,7 @@ function App() {
           count is {count}
         </button>
         <p>This is for me to show what I can do.</p>
+        <Greeting />
       </div>
     </>
   );
