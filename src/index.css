@@ -1,6 +1,11 @@
+* {
+  padding: 0px;
+}
+
 :root {
   font-family: "Courier New", Courier, monospace;
   line-height: 1.5;
+  padding: 0px;
 
   color-scheme: light dark;
   color: var(--dark-mode-text);
@@ -37,10 +42,15 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  font-family: inherit;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 25em;
 }
 
 h1 {
@@ -78,4 +88,15 @@ button:focus-visible {
   button {
     background-color: var(--light-button-color);
   }
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+li {
+  margin: 10px 15px 10px;
 }
