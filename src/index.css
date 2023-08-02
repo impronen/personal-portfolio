@@ -24,7 +24,7 @@ html {
   --light-link-hover-colo: #747bff;
 
   --light-button-color: #f9f9f9;
-  --button-border-hover: #646cff;
+  --button-border-hover: #213547;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -50,21 +50,17 @@ h1 {
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  border: 2px solid transparent;
+  padding: 1em 2.2em;
+  font-size: 1.1em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: border-color 0.2s;
 }
 button:hover {
   border-color: var(--button-border-hover);
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
 }
 
 @media (prefers-color-scheme: light) {

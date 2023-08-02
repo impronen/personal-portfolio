@@ -1,7 +1,7 @@
 export default function Button(props) {
   return (
     <>
-      <button>projects</button>
+      <button className={props.className}>projects</button>
     </>
   );
 }

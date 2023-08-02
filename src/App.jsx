@@ -7,11 +7,13 @@ function App() {
   return (
     <>
       <Header />
-      <h1 className="mainHeading">matti hopponen</h1>
-      <div className="card">
-        <Greeting />
+      <div className="splashSection">
+        <h1 className="mainHeading">matti hopponen</h1>
+        <div className="card">
+          <Greeting />
+        </div>
+        <Button className="splashButton" />
       </div>
-      <Button />
     </>
   );
 }

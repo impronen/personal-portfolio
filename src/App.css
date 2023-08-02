@@ -20,7 +20,7 @@ header {
   flex-direction: row;
   justify-content: space-between;
   /*   padding: 50px 30px 30px; */
-  height: 25em;
+  height: 30vh;
   width: 100vw;
   background-image: url(./assets/CurveLine.svg);
   background-size: 90%;
@@ -67,7 +67,12 @@ ul {
   -moz-text-fill-color: transparent;
 }
 
+.splashSection {
+  min-height: 65vh;
+}
+
 .mainHeading {
+  padding-top: 4em;
   background-image: linear-gradient(
     45deg,
     #b5e48c,
@@ -83,16 +88,7 @@ ul {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  animation: text-color 6s infinite alternate, text-appearance 1s;
-}
-
-@keyframes text-appearance {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
+  animation: text-color 6s infinite alternate;
 }
 
 @keyframes text-color {
@@ -102,6 +98,10 @@ ul {
   100% {
     background-position: right;
   }
+}
+
+.splashButton {
+  margin-top: 1.5em;
 }
 
 footer {
