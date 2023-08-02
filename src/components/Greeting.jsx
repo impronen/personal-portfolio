@@ -1,5 +1,3 @@
 export default function Greeting() {
-  return (
-    <h2>&quot;I swear by my pretty floral bonnet, I will end you.&quot;</h2>
-  );
+  return <h2>a self taught web developer</h2>;
 }

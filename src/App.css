@@ -1,19 +1,62 @@
+html,
+body,
 #root {
-  max-width: 1280px;
+  min-height: 100%;
+}
+
+#root {
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
 }
 
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /*   padding: 50px 30px 30px; */
   height: 25em;
+  width: 100vw;
+  background-image: url(./assets/CurveLine.svg);
+  background-size: 90%;
+  background-repeat: no-repeat;
 }
 
 .logoContainer {
   margin: 10px 15px 10px;
+}
+
+.mainHeading {
+  background-image: linear-gradient(
+    45deg,
+    #b5e48c,
+    #99d98c,
+    #52b69a,
+    #168aad,
+    #1e6091
+  );
+  background-size: 300%;
+  background-position: left;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  animation: text-animation 6s infinite alternate;
+}
+
+@keyframes text-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
 }
 
 svg {
@@ -30,4 +73,9 @@ ul {
 
 li {
   margin: 10px 15px 10px;
+}
+
+footer {
+  min-width: 100vw;
+  height: 260px;
 }

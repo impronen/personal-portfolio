@@ -2,6 +2,10 @@
   padding: 0px;
 }
 
+html {
+  background-color: var(--dark-background);
+}
+
 :root {
   font-family: "Courier New", Courier, monospace;
   line-height: 1.5;
@@ -9,7 +13,9 @@
 
   color-scheme: light dark;
   color: var(--dark-mode-text);
-  background-color: var(--dark-background);
+
+  background-size: 100%;
+  background-repeat: no-repeat;
 
   --dark-background: #242424;
   --light-background: #ffffff;
@@ -37,20 +43,6 @@ a {
 }
 a:hover {
   color: var(--dark-link-hover-color);
-}
-
-body {
-  margin: 0;
-  display: flex;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 25em;
 }
 
 h1 {
@@ -88,15 +80,4 @@ button:focus-visible {
   button {
     background-color: var(--light-button-color);
   }
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-li {
-  margin: 10px 15px 10px;
 }
