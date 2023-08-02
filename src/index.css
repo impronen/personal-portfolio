@@ -14,9 +14,6 @@ html {
   color-scheme: light dark;
   color: var(--dark-mode-text);
 
-  background-size: 100%;
-  background-repeat: no-repeat;
-
   --dark-background: #242424;
   --light-background: #ffffff;
 
@@ -48,6 +45,7 @@ a:hover {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  font-weight: lighter;
 }
 
 button {

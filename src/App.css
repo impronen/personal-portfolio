@@ -28,7 +28,43 @@ header {
 }
 
 .logoContainer {
+  display: flex;
+  margin: 10px 2rem 10px;
+}
+
+.name {
+  padding-left: 1rem;
+}
+
+svg {
+  width: 50px;
+  height: 50px;
+}
+
+.navigation {
+  margin-right: 2rem;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.menuList li {
+  cursor: pointer;
   margin: 10px 15px 10px;
+}
+
+.menuList li:hover {
+  background-image: linear-gradient(45deg, #99d98c, #52b69a);
+  background-size: 110%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 
 .mainHeading {
@@ -47,32 +83,25 @@ header {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  animation: text-animation 6s infinite alternate;
+  animation: text-color 6s infinite alternate, text-appearance 1s;
 }
 
-@keyframes text-animation {
+@keyframes text-appearance {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes text-color {
   0% {
     background-position: left;
   }
   100% {
     background-position: right;
   }
-}
-
-svg {
-  width: 50px;
-  height: 50px;
-}
-
-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
-}
-
-li {
-  margin: 10px 15px 10px;
 }
 
 footer {

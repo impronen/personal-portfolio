@@ -5,10 +5,11 @@ export default function Header() {
     <header>
       <div className="logoContainer">
         <Logo />
+        <p className="name">matti</p>
       </div>
 
       <nav className="navigation">
-        <ul>
+        <ul className="menuList">
           <li>home</li>
           <li>projects</li>
           <li>about</li>
