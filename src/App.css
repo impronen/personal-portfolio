@@ -115,7 +115,8 @@ ul {
 }
 
 .project {
-  min-height: 5rem;
+  border: 2px solid #1e6091;
+  min-height: 10rem;
   min-width: 350px;
   margin: 3em;
 }

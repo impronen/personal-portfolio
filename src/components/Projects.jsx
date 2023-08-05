@@ -1,15 +1,23 @@
+import { forwardRef } from "react";
 import { projectData } from "../data/projectData";
 import Project from "./Project";
 
-export default function Projects() {
+const Projects = forwardRef((props, ref) => {
   return (
     <>
-      <h2 className="projecSectiontHeading">projects</h2>
-      <div className="projectContainer">
-        {projectData.map((project) => (
-          <Project key={project.project} {...project} />
-        ))}
+      <div ref={ref}>
+        <h2 className="projecSectiontHeading">projects</h2>
+        <p>these projects show what i can do</p>
+        <div className="projectContainer">
+          {projectData.map((project) => (
+            <Project key={project.project} {...project} />
+          ))}
+        </div>
       </div>
     </>
   );
-}
+});
+
+Projects.displayName = "Projects";
+
+export default Projects;

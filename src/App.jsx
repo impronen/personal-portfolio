@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import Greeting from "./components/Greeting";
 import Header from "./components/Header";
 import Button from "./components/Button";
@@ -5,6 +6,12 @@ import Projects from "./components/Projects";
 import "./App.css";
 
 function App() {
+  const projects = useRef(null);
+  const scrollToProjects = () => {
+    console.log("WE CLICK");
+    projects.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <Header />
@@ -13,9 +20,9 @@ function App() {
         <div className="card">
           <Greeting />
         </div>
-        <Button className="splashButton" />
+        <Button onClick={scrollToProjects} className="splashButton" />
       </div>
-      <Projects />
+      <Projects ref={projects} />
     </>
   );
 }
