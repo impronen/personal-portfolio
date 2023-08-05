@@ -108,6 +108,7 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  margin-bottom: 25vh;
 }
 
 .projecSectiontHeading {
@@ -116,9 +117,20 @@ ul {
 
 .project {
   border: 2px solid #1e6091;
+  padding: 1em;
   min-height: 10rem;
-  min-width: 350px;
+  min-width: 450px;
   margin: 3em;
+}
+
+.about {
+  margin-top: 5em;
+}
+
+.aboutParagraph {
+  margin: 2em 8em;
+  line-height: 2;
+  text-align: left;
 }
 
 /* footer {

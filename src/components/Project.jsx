@@ -1,6 +1,4 @@
-export default function Project(props) {
-  const { project, description, github, live } = props;
-
+export default function Project({ project, description, github, live }) {
   return (
     <div className="project">
       <h3 className="projectHeading">{project}</h3>
