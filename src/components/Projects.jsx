@@ -5,7 +5,7 @@ import Project from "./Project";
 const Projects = forwardRef((props, ref) => {
   return (
     <>
-      <div ref={ref}>
+      <div className="projects" ref={ref}>
         <h2 className="projecSectiontHeading">projects</h2>
         <p>these projects show what i can do</p>
         <div className="projectContainer">

@@ -67,6 +67,12 @@ ul {
   -moz-text-fill-color: transparent;
 }
 
+.splashSection,
+.projects,
+.about {
+  max-width: 1400px;
+}
+
 .splashSection {
   min-height: 70vh;
 }
@@ -102,6 +108,14 @@ ul {
 
 .splashButton {
   margin-top: 1.5em;
+  padding: 1em 2.2em;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.projectButton {
+  margin: 1em;
+  padding: 1em 1.9em;
 }
 
 .projectContainer {

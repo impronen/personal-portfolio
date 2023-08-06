@@ -1,8 +1,15 @@
-export default function Button(props) {
+export default function Button({ text, className, onClick, url }) {
+  const handleClick = () => {
+    if (url) {
+      window.open(url, "_blank");
+    } else if (onClick) {
+      onClick();
+    }
+  };
   return (
     <>
-      <button className={props.className} onClick={props.onClick}>
-        projects
+      <button className={className} onClick={handleClick}>
+        {text}
       </button>
     </>
   );

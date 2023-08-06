@@ -20,7 +20,11 @@ function App() {
         <div className="card">
           <Greeting />
         </div>
-        <Button onClick={scrollToProjects} className="splashButton" />
+        <Button
+          text="projects"
+          onClick={scrollToProjects}
+          className="splashButton"
+        />
       </div>
       <Projects ref={projects} />
       <About />
