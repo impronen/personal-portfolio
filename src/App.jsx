@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useScrollToSection } from "./hooks/useScrollToSection";
 import Greeting from "./components/Greeting";
 import Header from "./components/Header";
 import Button from "./components/Button";
@@ -7,14 +7,15 @@ import About from "./components/About";
 import "./App.css";
 
 function App() {
-  const projects = useRef(null);
-  const scrollToProjects = () => {
-    projects.current.scrollIntoView({ behavior: "smooth" });
-  };
+  const [projectsRef, scrollToProjects] = useScrollToSection();
+  const [aboutRef, scrollToAbout] = useScrollToSection();
 
   return (
     <>
-      <Header />
+      <Header
+        scrollToProjects={scrollToProjects}
+        scrollToAbout={scrollToAbout}
+      />
       <div className="splashSection">
         <h1 className="mainHeading">matti hopponen</h1>
         <div className="card">
@@ -26,8 +27,8 @@ function App() {
           className="splashButton"
         />
       </div>
-      <Projects ref={projects} />
-      <About />
+      <Projects ref={projectsRef} />
+      <About ref={aboutRef} />
     </>
   );
 }

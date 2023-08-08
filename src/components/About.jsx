@@ -1,7 +1,10 @@
-export default function About() {
+import { forwardRef } from "react";
+
+// eslint-disable-next-line no-empty-pattern
+const About = forwardRef(({}, ref) => {
   return (
-    <>
-      <section className="about">
+    <div className="about" ref={ref}>
+      <section>
         <h2 className="aboutHeading">who is matti?</h2>
         <p className="aboutParagraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -23,6 +26,10 @@ export default function About() {
           congue quisque egestas diam in.
         </p>
       </section>
-    </>
+    </div>
   );
-}
+});
+
+About.displayName = "About";
+
+export default About;
