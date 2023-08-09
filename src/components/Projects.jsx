@@ -7,7 +7,7 @@ const Projects = forwardRef((props, ref) => {
     <>
       <div className="projects" ref={ref}>
         <h2 className="projecSectiontHeading">projects</h2>
-        <p>these projects show what i can do</p>
+        <p>these projects show what matti can do</p>
         <div className="projectContainer">
           {projectData.map((project) => (
             <Project key={project.project} {...project} />

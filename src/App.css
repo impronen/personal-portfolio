@@ -113,6 +113,15 @@ ul {
   font-weight: 500;
 }
 
+.projects {
+  padding-top: 10vh;
+  margin: 0vh auto 45vh;
+}
+
+.projecSectiontHeading {
+  color: #168aad;
+}
+
 .projectButton {
   margin: 1em;
   padding: 1em 1.9em;
@@ -122,11 +131,6 @@ ul {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 25vh;
-}
-
-.projecSectiontHeading {
-  color: #168aad;
 }
 
 .project {
@@ -138,13 +142,49 @@ ul {
 }
 
 .about {
-  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 5em 5em 35vh;
+}
+
+.aboutContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.aboutText {
+  max-width: 40vw;
+  min-height: 20vw;
 }
 
 .aboutParagraph {
-  margin: 2em 8em;
+  padding-top: 1em;
+  text-align: justify;
   line-height: 2;
-  text-align: left;
+}
+
+.aboutSkills {
+  display: flex;
+  flex-direction: column;
+  max-width: 25vw;
+}
+
+.skillList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.skill {
+  margin-right: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5rem 1rem;
+  background-color: #1e6091;
+  font-size: smaller;
+  font-weight: 600;
 }
 
 /* footer {
