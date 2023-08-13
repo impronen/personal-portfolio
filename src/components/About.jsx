@@ -18,7 +18,7 @@ const About = forwardRef(({}, ref) => {
           <p className="aboutParagraph">
             whether its understanding customer requirements, or complex
             interactions in customer systems or implementing robust solutions to
-            those requirements - youve got your man.
+            those requirements - you&apos;ve got your man.
           </p>
           <p className="aboutParagraph">
             when not coding, you might find him reading some long and (some
