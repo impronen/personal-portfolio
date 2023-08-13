@@ -10,15 +10,20 @@ const About = forwardRef(({}, ref) => {
         <section className="aboutText">
           <h3>matti is a self taught programmer</h3>
           <p className="aboutParagraph">
-            he's a bit of an odd one. after spending most of his career in
-            customer service and logistics, code beckoned. due to the
-            background, matti brings a unique perspective to creating web
-            experiences that are customer centric. matti is naturally curious
-            and eager to learn new stuff.
+            bit of an odd one, this fella. after spending most of his career in
+            customer service and logistics, code beckoned. as aresult, matti
+            brings a unique, customer centric perspective to creating web
+            experiences.
+          </p>
+          <p className="aboutParagraph">
+            whether its understanding customer requirements, or complex
+            interactions in customer systems or implementing robust solutions to
+            those requirements - youve got your man.
           </p>
           <p className="aboutParagraph">
             when not coding, you might find him reading some long and (some
             might say) boring tome of a book or making odd sounds with a guitar.
+            or hiking with his dear wife.
           </p>
         </section>
 

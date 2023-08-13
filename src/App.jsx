@@ -4,17 +4,20 @@ import Header from "./components/Header";
 import Button from "./components/Button";
 import Projects from "./components/Projects";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import "./App.css";
 
 function App() {
   const [projectsRef, scrollToProjects] = useScrollToSection();
   const [aboutRef, scrollToAbout] = useScrollToSection();
+  const [contactRef, scrollToContact] = useScrollToSection();
 
   return (
     <>
       <Header
         scrollToProjects={scrollToProjects}
         scrollToAbout={scrollToAbout}
+        scrollToContact={scrollToContact}
       />
       <div className="splashSection">
         <h1 className="mainHeading">matti hopponen</h1>
@@ -29,6 +32,7 @@ function App() {
       </div>
       <Projects ref={projectsRef} />
       <About ref={aboutRef} />
+      <Contact ref={contactRef} />
     </>
   );
 }
