@@ -1,8 +1,10 @@
 import { ReactComponent as Logo } from "iconoir/icons/profile-circle.svg";
+import { ReactComponent as CurveLine } from "../assets/CurveLine.svg";
 
 export default function Header({ scrollToProjects, scrollToAbout }) {
   return (
-    <header>
+    <header className="header-container">
+      <CurveLine className="background-image" alt="Background" />
       <div className="logoContainer">
         <Logo />
         <p className="name">matti</p>

@@ -19,12 +19,14 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /*   padding: 50px 30px 30px; */
   height: 30vh;
   width: 100vw;
-  background-image: url(./assets/CurveLine.svg);
-  background-size: 90%;
-  background-repeat: no-repeat;
+}
+
+@media (max-width: 1600px) {
+  header {
+    background-size: 70%;
+  }
 }
 
 .logoContainer {
@@ -94,7 +96,7 @@ ul {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-  animation: text-color 6s infinite alternate;
+  animation: text-color 5.5s infinite alternate;
 }
 
 @keyframes text-color {

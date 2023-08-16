@@ -5,7 +5,8 @@ import Button from "./components/Button";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import "./App.css";
+import "./style/App.css";
+import "./style/svg.css";
 
 function App() {
   const [projectsRef, scrollToProjects] = useScrollToSection();
