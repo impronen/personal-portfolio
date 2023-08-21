@@ -188,3 +188,29 @@ ul {
   font-size: smaller;
   font-weight: 600;
 }
+
+.contact {
+  margin: 5em 5em 35vh;
+}
+
+.contactContainer::after {
+  content: "";
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  height: 1px;
+  bottom: 5px;
+  background-color: #52b69a;
+}
+
+footer {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: auto 5%;
+}
+
+.leftFooter {
+  width: 40%;
+  text-align: justify;
+  font-size: smaller;
+}

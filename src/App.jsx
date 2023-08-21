@@ -5,6 +5,7 @@ import Button from "./components/Button";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 import "./style/App.css";
 import "./style/svg.css";
 
@@ -34,6 +35,7 @@ function App() {
       <Projects ref={projectsRef} />
       <About ref={aboutRef} />
       <Contact ref={contactRef} />
+      <Footer />
     </>
   );
 }
