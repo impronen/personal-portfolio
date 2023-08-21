@@ -193,24 +193,31 @@ ul {
   margin: 5em 5em 35vh;
 }
 
+.contactContainer {
+  position: relative;
+}
+
 .contactContainer::after {
   content: "";
   position: absolute;
-  width: 40%;
-  left: 30%;
+  width: 85%;
+  left: 5%;
   height: 1px;
-  bottom: 5px;
+  bottom: -100px;
   background-color: #52b69a;
 }
 
 footer {
   display: flex;
   flex-direction: row-reverse;
-  margin: auto 5%;
+  margin: auto 2%;
 }
 
 .leftFooter {
   width: 40%;
-  text-align: justify;
   font-size: smaller;
+}
+
+.leftFooter p {
+  text-align: justify;
 }
