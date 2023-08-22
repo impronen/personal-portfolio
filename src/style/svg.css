@@ -1,3 +1,51 @@
+#line1 {
+  stroke: #b5e48c;
+  stroke-dasharray: 1150;
+  stroke-dashoffset: 1150;
+  animation: draw 1900ms linear 5ms forwards;
+}
+
+#line2 {
+  stroke: #b5e48c;
+  stroke-dasharray: 1020;
+  stroke-dashoffset: 1020;
+  animation: draw 1800ms ease-in-out 5ms forwards;
+}
+
+#line3 {
+  stroke: #b5e48c;
+  stroke-dasharray: 1050;
+  stroke-dashoffset: 1050;
+  animation: draw 1950ms linear 5ms forwards;
+}
+
+#line4 {
+  stroke: #b5e48c;
+  stroke-dasharray: 1438.6812744140625;
+  stroke-dashoffset: 1438.6812744140625;
+  animation: draw 1950ms linear 5ms forwards;
+}
+
+#line5 {
+  stroke: #b5e48c;
+  stroke-dasharray: 1356.572509765625;
+  stroke-dashoffset: 1356.572509765625;
+  animation: draw 2050ms linear 5ms forwards;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1000;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
 @keyframes colorChange {
   0% {
     stroke: #b5e48c;
@@ -17,14 +65,17 @@
 }
 
 .animated-line {
+  animation-delay: 1400ms;
   animation: colorChange 5s infinite alternate;
 }
 
 .animated-line2 {
+  animation-delay: 1400ms;
   animation: colorChange 5.5s infinite alternate;
 }
 
 .animated-line3 {
+  animation-delay: 1400ms;
   animation: colorChange 6s infinite alternate;
 }
 
