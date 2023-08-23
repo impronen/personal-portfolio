@@ -46,6 +46,14 @@
   }
 }
 
+.animated-line1 {
+  animation-name: colorChange;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-delay: 2000ms;
+  animation-direction: alternate;
+}
+
 @keyframes colorChange {
   0% {
     stroke: #b5e48c;
@@ -62,21 +70,6 @@
   100% {
     stroke: #1e6091;
   }
-}
-
-.animated-line {
-  animation-delay: 1400ms;
-  animation: colorChange 5s infinite alternate;
-}
-
-.animated-line2 {
-  animation-delay: 1400ms;
-  animation: colorChange 5.5s infinite alternate;
-}
-
-.animated-line3 {
-  animation-delay: 1400ms;
-  animation: colorChange 6s infinite alternate;
 }
 
 .background-image {
