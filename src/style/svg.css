@@ -2,35 +2,65 @@
   stroke: #b5e48c;
   stroke-dasharray: 1150;
   stroke-dashoffset: 1150;
-  animation: draw 1900ms linear 5ms forwards;
+  animation-name: draw, colorChange;
+  animation-duration: 1900ms, 4s;
+  animation-delay: 5ms, 1910ms;
+  animation-timing-function: linear, linear;
+  animation-direction: normal, alternate;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
 }
 
 #line2 {
   stroke: #b5e48c;
   stroke-dasharray: 1020;
   stroke-dashoffset: 1020;
-  animation: draw 1800ms ease-in-out 5ms forwards;
+  animation-name: draw, colorChange;
+  animation-duration: 1800ms, 5s;
+  animation-delay: 5ms, 1810ms;
+  animation-timing-function: linear, linear;
+  animation-direction: normal, alternate;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
 }
 
 #line3 {
   stroke: #b5e48c;
   stroke-dasharray: 1050;
   stroke-dashoffset: 1050;
-  animation: draw 1950ms linear 5ms forwards;
+  animation-name: draw, colorChange;
+  animation-duration: 1950ms, 4s;
+  animation-delay: 5ms, 1960ms;
+  animation-timing-function: linear, linear;
+  animation-direction: normal, alternate;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
 }
 
 #line4 {
   stroke: #b5e48c;
   stroke-dasharray: 1438.6812744140625;
   stroke-dashoffset: 1438.6812744140625;
-  animation: draw 1950ms linear 5ms forwards;
+  animation-name: draw, colorChange;
+  animation-duration: 1950ms, 5.5s;
+  animation-delay: 5ms, 1960ms;
+  animation-timing-function: linear, linear;
+  animation-direction: normal, alternate;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
 }
 
 #line5 {
   stroke: #b5e48c;
   stroke-dasharray: 1356.572509765625;
   stroke-dashoffset: 1356.572509765625;
-  animation: draw 2050ms linear 5ms forwards;
+  animation-name: draw, colorChange;
+  animation-duration: 2050ms, 5.5s;
+  animation-delay: 5ms, 2060ms;
+  animation-timing-function: linear, linear;
+  animation-direction: normal, alternate;
+  animation-iteration-count: 1, infinite;
+  animation-fill-mode: forwards, none;
 }
 
 @keyframes draw {
@@ -46,13 +76,13 @@
   }
 }
 
-.animated-line1 {
+/* .animated-line1 {
   animation-name: colorChange;
   animation-duration: 5s;
   animation-iteration-count: infinite;
   animation-delay: 2000ms;
   animation-direction: alternate;
-}
+} */
 
 @keyframes colorChange {
   0% {
