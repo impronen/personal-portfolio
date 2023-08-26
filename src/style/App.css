@@ -36,19 +36,6 @@ header {
   padding-left: 1rem;
 }
 
-@media (max-width: 500px) {
-  header {
-    height: 20vh;
-  }
-  .logoContainer {
-    display: none;
-  }
-  .navigation {
-    width: 100%;
-    margin: 0px;
-  }
-}
-
 svg {
   width: 50px;
   height: 50px;
@@ -74,12 +61,6 @@ ul {
   -webkit-text-fill-color: transparent;
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
-}
-
-.splashSection,
-.projects,
-.about {
-  max-width: 1400px;
 }
 
 .splashSection {
@@ -227,4 +208,94 @@ footer {
 
 .leftFooter p {
   text-align: justify;
+}
+
+@media (max-width: 500px) {
+  header {
+    height: 20vh;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  .logoContainer {
+    display: none;
+  }
+  .navigation {
+    width: 100%;
+    margin: 0px;
+  }
+
+  .splashSection,
+  .projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+  }
+
+  .splashSection {
+    min-height: 60vh;
+  }
+  .splashSection h1 {
+    font-size: 32px;
+  }
+  .mainHeading {
+    margin-top: 1%;
+  }
+  .projects,
+  .about {
+    margin: 10vh auto 20vh;
+  }
+
+  .projects .project {
+    min-width: 85vw;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutContainer {
+    flex-direction: column;
+  }
+  .aboutText,
+  .aboutSkills {
+    align-self: center;
+    max-width: 85vw;
+  }
+}
+
+@media (max-width: 800px) and (orientation: landscape) {
+  .mainHeading {
+    padding-top: 0.3em;
+  }
+  .logoContainer {
+    display: none;
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+  }
+  .menuList {
+    align-self: center;
+    margin-right: 0px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 1100px) and (orientation: landscape) {
+  header {
+    height: 25vh;
+  }
+
+  .menuList {
+    align-self: center;
+    margin-right: 0px;
+    width: 80%;
+  }
+  .mainHeading {
+    padding-top: 0.6em;
+  }
 }

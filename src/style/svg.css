@@ -118,7 +118,12 @@
     height: 22%;
   }
 }
-
+@media (orientation: landscape) and (max-width: 1250px) {
+  .background-image,
+  .background-image2 {
+    height: 45%;
+  }
+}
 .background-image2 {
   transform: translateY(-33%) rotate(180deg) scaleX(-1);
   position: absolute;
