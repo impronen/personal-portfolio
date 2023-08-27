@@ -124,11 +124,36 @@ ul {
 }
 
 .project {
+  display: flex;
+  justify-content: space-around;
   border: 2px solid #1e6091;
   padding: 1em;
   min-height: 10rem;
   min-width: 450px;
   margin: 3em;
+}
+
+.leftWrapper,
+.rightWrapper {
+  margin: 10px;
+}
+
+img {
+  max-width: 450px;
+  height: auto;
+}
+
+.featureList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+}
+
+.featureList li {
+  max-width: 70%;
+  text-align: left;
+  font-size: 12px;
+  margin: 5px;
 }
 
 .about {
