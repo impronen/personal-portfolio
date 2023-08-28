@@ -10,7 +10,7 @@ export const projectData = [
     ],
     github: "https://github.com/impronen/odin-todo",
     live: "https://impronen.github.io/odin-todo/",
-    image: "../src/assets/images/todo.png",
+    image: "/static/images/todo.png",
   },
   {
     project: "Weather thingy",
@@ -23,7 +23,7 @@ export const projectData = [
     ],
     github: "https://github.com/impronen/odin-weather",
     live: "https://impronen.github.io/odin-weather/",
-    image: "../src/assets/images/weather.png",
+    image: "/static/images/weather.png",
   },
   {
     project: "Battleship",
@@ -35,7 +35,7 @@ export const projectData = [
     ],
     github: "https://github.com/impronen/battleship",
     live: "https://impronen.github.io/battleship/",
-    image: "../src/assets/images/battleship.png",
+    image: "/static/images/battleship.png",
   },
   {
     project: "CV App",
@@ -48,6 +48,6 @@ export const projectData = [
     ],
     github: "https://github.com/impronen/cv-app",
     live: "https://cv-app-rho.vercel.app/",
-    image: "../src/assets/images/cvapp.png",
+    image: "/static/images/cvapp.png",
   },
 ];
