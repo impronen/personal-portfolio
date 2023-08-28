@@ -126,11 +126,17 @@ ul {
 .project {
   display: flex;
   justify-content: space-around;
-  border: 2px solid #1e6091;
+  background-image: linear-gradient(45deg, #1e6091, #168aad, #52b69ab7);
+  border-radius: 5px;
   padding: 1em;
   min-height: 10rem;
-  min-width: 450px;
+  min-width: 80vw;
   margin: 3em;
+}
+
+.project button {
+  border-radius: 5px;
+  max-width: 40%;
 }
 
 .leftWrapper,
@@ -138,8 +144,20 @@ ul {
   margin: 10px;
 }
 
+.leftWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.rightWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
 img {
-  max-width: 450px;
+  max-width: 40vw;
   height: auto;
 }
 
@@ -154,6 +172,10 @@ img {
   text-align: left;
   font-size: 12px;
   margin: 5px;
+}
+
+.featureList h4 {
+  font-size: 12px;
 }
 
 .about {
@@ -171,7 +193,7 @@ img {
 }
 
 .aboutText {
-  max-width: 40vw;
+  max-width: 50vw;
   min-height: 20vw;
 }
 
@@ -274,6 +296,7 @@ footer {
   }
 
   .projects .project {
+    flex-direction: column;
     min-width: 85vw;
   }
   .about {
