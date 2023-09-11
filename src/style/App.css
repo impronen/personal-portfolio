@@ -370,6 +370,9 @@ footer {
   .mainHeading {
     margin-top: 1%;
   }
+  .mouse {
+    display: none;
+  }
   .projects,
   .about {
     margin: 10vh auto 20vh;
@@ -400,6 +403,9 @@ footer {
   .logoContainer {
     display: none;
   }
+  .mouse {
+    display: none;
+  }
   .navigation {
     display: flex;
     justify-content: center;
@@ -417,7 +423,9 @@ footer {
   header {
     height: 25vh;
   }
-
+  .mouse {
+    display: none;
+  }
   .menuList {
     align-self: center;
     margin-right: 0px;
