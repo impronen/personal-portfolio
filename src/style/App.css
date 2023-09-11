@@ -380,8 +380,20 @@ footer {
 
   .projects .project {
     flex-direction: column;
-    min-width: 85vw;
+    /*     min-width: 85vw; */
   }
+  .leftWrapper {
+    justify-content: center;
+  }
+  .projectImage {
+    min-width: 65vw;
+  }
+
+  .featureList li {
+    align-self: center;
+    text-align: center;
+  }
+
   .about {
     display: flex;
     flex-direction: column;

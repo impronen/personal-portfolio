@@ -10,8 +10,8 @@ const About = forwardRef(({}, ref) => {
         <section className="aboutText">
           <h3>matti is a self taught programmer</h3>
           <p className="aboutParagraph">
-            after spending most of his career in customer service and logistics,
-            code beckoned. as aresult, i bring a unique, customer centric
+            after i had worked over a decade in customer service and logistics,
+            code beckoned. as aresult, i can bring a unique, customer centric
             perspective to creating web experiences.
           </p>
           <p className="aboutParagraph">
@@ -20,9 +20,9 @@ const About = forwardRef(({}, ref) => {
             those requirements - you&apos;ve got your man.
           </p>
           <p className="aboutParagraph">
-            when not coding, you might find me reading some long and (some might
-            say) boring tome of a book or making odd sounds with a guitar. or
-            hiking with my dear wife.
+            when i&apos;m not coding, you might find me reading some long and
+            (some might say) boring tome of a book or making odd sounds with a
+            guitar. or hiking with my dear wife.
           </p>
         </section>
 
