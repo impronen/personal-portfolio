@@ -31,6 +31,7 @@ function App() {
           onClick={scrollToProjects}
           className="splashButton"
         />
+        <div className="mouse"></div>
       </div>
       <Projects ref={projectsRef} />
       <About ref={aboutRef} />

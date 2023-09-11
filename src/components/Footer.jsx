@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="footerContainer">
       <CurveLine className="background-image2" alt="Background" />
       <div className="leftFooter">
-        <p className="footerText">made by matti 2023</p>
+        {/*  <p className="footerText">made by matti 2023</p> */}
       </div>
     </footer>
   );

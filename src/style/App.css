@@ -64,7 +64,14 @@ ul {
 }
 
 .splashSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   min-height: 70vh;
+}
+
+.splashButton {
+  max-width: 220px;
 }
 
 .mainHeading {
@@ -101,6 +108,77 @@ ul {
   padding: 1em 2.2em;
   font-size: 1.1em;
   font-weight: 500;
+  /*   border: 0.35rem solid;
+  border-image: linear-gradient(
+    45deg,
+    #b5e48c,
+    #99d98c,
+    #52b69a,
+    #168aad,
+    #1e6091
+  ); */
+}
+/*TODO:  when you get bac to this, make a rotating border thing */
+/* use this https://codepen.io/alphardex/pen/vYEYGzp */
+
+@keyframes borderRotate {
+  100% {
+    --angle: 420deg;
+  }
+}
+
+.mouse {
+  margin-top: 20vh;
+  align-self: center;
+  width: 30px;
+  height: 60px;
+  border: 2px solid #1e6091;
+  border-radius: 60px;
+  animation: mouseChange 4s linear 60ms alternate infinite none;
+  position: relative;
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #168aad;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+  }
+}
+
+@keyframes mouseChange {
+  0% {
+    border-color: #1e6091;
+  }
+  33% {
+    border-color: #168aad;
+  }
+  66% {
+    border-color: #168aad;
+  }
+  100% {
+    border-color: #52b69a;
+  }
+}
+
+@keyframes wheel {
+  to {
+    opacity: 0;
+    top: 40px;
+  }
+}
+
+@-webkit-keyframes wheel {
+  to {
+    opacity: 0;
+    top: 40px;
+  }
 }
 
 .projects {
@@ -128,9 +206,9 @@ ul {
   justify-content: space-around;
   background-image: linear-gradient(45deg, #1e6091, #168aad, #52b69ab7);
   border-radius: 5px;
-  padding: 1em;
+  padding: 2em;
   min-height: 10rem;
-  min-width: 80vw;
+  width: 70vw;
   margin: 3em;
 }
 
@@ -225,14 +303,16 @@ img {
 }
 
 .contact {
-  margin: 5em 5em 35vh;
+  margin: 5em 5em 40vh;
 }
 
 .contactContainer {
   position: relative;
 }
 
-.contactContainer::after {
+/* TODO: a divider for the bottom of contact  */
+
+/* .contactContainer::after {
   content: "";
   position: absolute;
   width: 85%;
@@ -240,12 +320,11 @@ img {
   height: 1px;
   bottom: -100px;
   background-color: #52b69a;
-}
+} */
 
 footer {
   display: flex;
   flex-direction: row-reverse;
-  margin: auto 2%;
 }
 
 .leftFooter {
@@ -255,6 +334,7 @@ footer {
 
 .leftFooter p {
   text-align: justify;
+  /*   transform: translate(42px, 18px); */
 }
 
 @media (max-width: 500px) {
